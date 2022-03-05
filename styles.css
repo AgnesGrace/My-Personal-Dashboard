@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: royalblue;
+	background-size: cover;
+	background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    
+}
+h2 {
+	color: green;
+	font-size: 2rem;
+	font-weight: bold;
+}
+p {
+	font-size: 1.5rem;
+	color: crimson;
+	text-shadow: 2px 1px 2px #474747;;
+}
+
+/*layout*/
+.container {
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+.time-container{
+	order: 0;
+	text-align: center;
+	font-size: 2.5rem;
+
+}
+.crypto-weather {
+	order: -1;
+	display: flex;
+	justify-content: space-between;
+
+}
+.crypto {
+	display: flex;
+	align-items: center;
+
+
+}
+.crypto > span {
+	color: crimson;
+	font-weight: bold;
+	padding: 0 0 0 .5em;
+	margin: 0;
+}
+.crypto > p {
+	color: crimson;
+	margin: 0;
+	padding: 0 0 0 .5em;
+}
+
+@media(max-width: 1066){
+	body{
+		min-width: 600px;
+		min-height: 100vh;
+
+	}
+	.time-container{
+	font-size: 1.5rem;
+
+	}
+	.weather {
+		margin: 0 2em;
+	}
+	.crypto > p {
+	font-size: .5rem;
+}
+}
