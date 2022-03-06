@@ -43,26 +43,31 @@ p {
 .crypto-weather {
 	order: -1;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+
 
 }
-.crypto {
+/*.crypto {
 	display: flex;
 	align-items: center;
 
 
-}
-.crypto > span {
+}*/
+/*.crypto > span {
 	color: crimson;
 	font-weight: bold;
 	padding: 0 0 0 .5em;
-	margin: 0;
+	
 }
 .crypto > p {
 	color: crimson;
-	margin: 0;
 	padding: 0 0 0 .5em;
-}
+}*/
+
+
+
+
+
 
 @media(max-width: 1066){
 	body{
@@ -74,10 +79,8 @@ p {
 	font-size: 1.5rem;
 
 	}
-	.weather {
-		margin: 0 2em;
-	}
+
 	.crypto > p {
-	font-size: .5rem;
-}
+	font-size: .4rem;
+	}
 }
